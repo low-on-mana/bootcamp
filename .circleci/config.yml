@@ -9,6 +9,7 @@ jobs:
       # specify the version you desire here
        - image: circleci/ruby:2.4.1-node-browsers
        - image: circleci/mysql:5.7
+         environment:
            MYSQL_ALLOW_EMPTY_PASSWORD: yes
            MYSQL_ROOT_PASSWORD: ''
            MYSQL_DATABASE: circleci 
